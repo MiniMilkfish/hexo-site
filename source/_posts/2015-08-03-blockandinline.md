@@ -3,26 +3,24 @@ title: 块状和行内元素
 date: 2015/08/03
 tags: [HTML]
 author: jizhi.w77@foxmail.com
+comments: true
 ---
 
-对于块状元素和行内元素，从概念上了解他们的异同，知道大体上块级元素有哪些行内元素有哪些，然后重点知道行内元素的padding和margin有哪些特殊的地方，基本上就可以了。
+对于块状元素和行内元素，从概念上了解他们的异同，知道大体上块级元素有哪些、行内元素有哪些，然后重点了解行内元素的padding和margin有哪些特殊的地方，基本上就可以了。
 
 ## 概念
 
-#### MDN总结
+### MDN总结
 
-- 解释
+- 概念
 块级元素占据其父元素（容器）的整个空间，默认宽度为父元素的100%，因此创建了一个“块”。一个行内元素只占据它对应标签的边框所包含的空间。
 - 内容
 一般情况下，行内元素只能包含数据和其他行内元素。而块级元素可以包含行内元素和其他块级元素。这种结构上的包含继承区别可以使块级元素创建比行内元素更”大型“的结构。
 - 格式
 默认情况下，行内元素不会以新行开始，而块级元素会新起一行
 
-> 以上是MDN里对块级和行内元素的几点说明。
+### 个人总结
 
-#### 个人总结
-
-- 总结
 行内元素和块级元素的区别无非是在DOM结构渲染形式上所表现出来的不同而已。
 - 行内元素
  * 行内元素根据它对应标签所包含的内容`自适应宽度`，不多也不少，刚好够装下它所包含的内容。因此没有必要再提供处理宽高、边距属性的能力，所以行内元素的宽高属性是默认无效的，而且行内元素只要宽度足够就一直从左向右排列不会换新行。
@@ -32,23 +30,28 @@ author: jizhi.w77@foxmail.com
 
 ## 盒模型对比
 
-上面已经说过，行内元素设置宽高属性是无效的，这一点无需在讨论，重要的是行内元素的padding和margin属性的表现。先贴两张图说明问题。
-- **行内元素设置padding-bottom**
-{% img  http://ojd8i48oc.bkt.clouddn.com/blog-%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0%E8%AE%BE%E7%BD%AEpadding-bottom.png 450 行内元素设置padding-bottom %}
+上面已经说过，行内元素设置宽高属性是无效的，这一点无需再讨论，重要的是行内元素的padding和margin属性的表现。先贴两张图说明问题。
 
-- **块级元素设置padding-bottom**
-{% img  http://ojd8i48oc.bkt.clouddn.com/blog-%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0%E8%AE%BE%E7%BD%AEpadding-bottom.png 450  块级元素设置padding-bottom %}
+- 行内元素设置padding-bottom
 
-> **划重点**:总的来说，行内元素只有左右两个方向可以正常设置margin和padding属性，上下margin直接无效，而上下padding会出现如上图所示的异于块状元素的渲染方式。
+![行内元素设置padding-bottom](../../images/20150803/01.png)
 
-## 行内元素列表
+- 块级元素设置padding-bottom
+
+![行内元素设置padding-bottom](../../images/20150803/02.png)
+
+> 总的来说，行内元素只有左右两个方向可以正常设置margin和padding属性，上下margin直接无效，而上下padding会出现如上图所示的异于块状元素的渲染方式。
+
+## 分类
+
+### 行内元素列表
 
 - b, big, i, small, tt
 - abbr, acronym, cite, code, dfn, em, kbd, strong, samp, var
 - a, bdo, br, img, map, object, q, script, span, sub, sup
 - button, input, label, select, textarea
 
-## 块级元素列表
+### 块级元素列表
 
 以下是 HTML 中所有的块级元素列表（虽然”块级“在新的 HTML5 元素中没有明确定义）。
 
@@ -109,6 +112,7 @@ author: jizhi.w77@foxmail.com
 - &lt;video&gt; `HTML5`
 视频。
 
-<div class="tip">
-参考文档:  [Block-level_elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements) | [Inline_elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements)
-</div>
+## 参考文档
+
+- [Block-level_elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements)
+- [Inline_elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements)

@@ -1,13 +1,15 @@
 ---
-title: script标签的defer 和 async
+title: <script>标签的defer和async属性
 date: 2015/08/16
 tags: [HTML]
 excerpt: script标签在HTML文档中出现的时机决定着对应js脚本的加载时间。默认的，当script加载的时候页面是不会进行渲染的，也就是传统意义上的加载堵塞，这样很容易引起页面假死。所以我们经常将script标签放入body最底部。
+author: jizhi.w77@foxmail.com
+comments: true
 ---
 
 在前端模块化、文件合并、打包概念等没有出现的年代，原始方式的脚本引入有很多地方值得玩味，就比如到底将script插入到哪才是最合适的。众所周知，script标签在HTML文档中出现的时机决定着对应js脚本的加载时间，默认的，当script加载的时候页面是不会进行渲染的，也就是传统意义上的加载堵塞，这样很容易引起页面假死。所以我们经常将script标签放入body最底部。
 
-可见，脚本的出现、加载、执行时机对于页面加载影响很大。而script的defer和async就是与js脚本的加载、运行时机相关的两个属性。
+可见，脚本的出现、加载、执行时机对于页面加载影响很大。而script的defer和async就是与js脚本的加载、执行时机密切相关的两个属性。
 
 下面详细分析这两个属性到底会对脚本的加载执行时机产生什么样的影响。
 

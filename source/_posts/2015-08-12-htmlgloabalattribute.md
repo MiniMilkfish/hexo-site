@@ -3,9 +3,11 @@ title: HTML Global Attributes
 date: 2015/08/12
 tags: [HTML]
 excerpt: HTML 定义了少量的全局属性，这些属性适用于所有的HTML elements。这些属性可以用在所有的element中，尽管有些属性对一些element没什么作用。对于一些`非规范`的元素这些属性应该依然有效。
+author: jizhi.w77@foxmail.com
+comments: true
 ---
 
-## MDN
+## 概念
 
 HTML 定义了少量的全局属性，这些属性适用于所有的HTML elements。也就是说这些属性可以用在所有的element中，尽管有些属性对一些element没什么卵用。
 
@@ -23,7 +25,7 @@ HTML 定义了少量的全局属性，这些属性适用于所有的HTML element
 表示没看懂而且浏览器的实现情况也很不乐观。
 - data-\*
 自定义属性，这个属性首先是一个整体的，即`data-*`是一个整体。被设置了这个属性的element，可以通过HTMElement的接口访问所有的自定义数据。HTMLElement.dataset属性提供了访问他们的权限。
-> 注意：HTMLElement.dataset是一个 StringMap。一个名叫data-test-value的自定义属性可以通过HTMLElment.dataset.testValue来访问，属性的名字中的中线(U+002D)被挨着它字母的大写字母代替了（驼峰命名）。
+注意：HTMLElement.dataset是一个 StringMap。一个名叫data-test-value的自定义属性可以通过HTMLElment.dataset.testValue来访问，属性的名字中的中线(U+002D)被挨着它字母的大写字母代替了（驼峰命名）。
 - dir
 文本书写方向属性，文档里建议文本书写方式的定义要运用此属性而不是写到css里的direction，不解为何！
 - draggable
@@ -52,4 +54,5 @@ HTML 定义了少量的全局属性，这些属性适用于所有的HTML element
 - translate
 这是一个可枚举的属性，用于确定当页面进行本地化(localized)时，元素的属性值以及元素的文本(Text)子节点中的内容是否要进行翻译。其可取的值如下：空字符串(empty)或者 "yes"，表示这个元素相关的内容将会被翻译；"no"，表示这个元素相关的内容不会被翻译。
 
-<div class="tip">更多内容请查看MDN文档：[Global_attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)</div>
+## MDN文档
+- [Global_attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)</div>
