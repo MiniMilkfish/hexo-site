@@ -1,1 +1,1 @@
-# Hi,You Bad Boy!:house: Home: http://wangjizhi.com## Framework[󠁨![Hexo](https://hexo.io/logo.svg)](https://hexo.io/)
+# Hi,Kitty!:house: Home: http://wangjizhi.com## Framework[󠁨Hexo](https://hexo.io/)## Theme[cactus-dark](https://probberechts.github.io/cactus-dark/)

@@ -1,8 +1,8 @@
 ---
 title: 块状和行内元素
 date: 2015/08/03
-excerpt: HTML中的块级元素和行内元素
 tags: [HTML]
+author: jizhi.w77@foxmail.com
 ---
 
 对于块状元素和行内元素，从概念上了解他们的异同，知道大体上块级元素有哪些行内元素有哪些，然后重点知道行内元素的padding和margin有哪些特殊的地方，基本上就可以了。

@@ -1,6 +1,6 @@
 ---
 title: Generator 函数的异步应用
-date: 2017/05/20
+date: 2017/05/21
 tags: [Generator, ES6]
 excerpt:  上一篇整理了应用Promise实现链式调用避免回调函数嵌套的内容，回调函数本身并没有问题，它的问题出现在多个回调函数嵌套。但是Promise也并非十全十美，then的链式调用将代码的语义化降低，一长串的then使得代码逻辑不是很直观。
 ---

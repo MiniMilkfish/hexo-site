@@ -1,6 +1,7 @@
 nav:
   Home: /
   Posts: /archives/
+  Tags: /tags/
   About: /about/
 
 projects_url: http://github.com/jizhi77
